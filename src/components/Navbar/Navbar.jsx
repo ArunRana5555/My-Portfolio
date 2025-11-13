@@ -3,11 +3,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../../assets/Profilelogo.jpg";
-// import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-// import { CgGitFork } from "react-icons/cg";
 import {
-  // AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineContacts
@@ -38,10 +35,21 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-          {/* <h1>Arun</h1> */}
-        </Navbar.Brand>
+        <Navbar.Brand href="/" className="d-flex align-items-center">
+  <img
+    src={logo}
+    alt="brand"
+    className="img-fluid"
+    style={{
+      width: "50px",
+      height: "50px",
+      borderRadius: "50%",
+      objectFit: "cover",
+      border: "2px solid white"
+    }}
+  />
+</Navbar.Brand>
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -102,17 +110,6 @@ function NavBar() {
                 <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact Me
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/19sajib/portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -30,16 +30,6 @@ const Social = () => {
                       <AiFillGithub />
                     </a>
                   </li>
-                  {/* <li className="contact-icons">
-                    <a
-                      href="https://twitter.com/19sajib"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-color  contact-social-icons"
-                    >
-                      <AiOutlineTwitter />
-                    </a>
-                  </li> */}
                   <li className="contact-icons">
                     <a
                       href="https://www.linkedin.com/in/arun-kumar-4a26332a9"
@@ -50,16 +40,6 @@ const Social = () => {
                       <FaLinkedinIn />
                     </a>
                   </li>
-                  {/* <li className="contact-icons">
-                    <a
-                      href="hhttps://leetcode.com/19sajib/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-color contact-social-icons"
-                    >
-                      <SiLeetcode />
-                    </a>
-                  </li> */}
                 </ul>
               </Col>
             </Row>

@@ -2,11 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
-import pg from "../assets/projects/pg.png";
-import project from "../assets/projects/project.jpeg";
-import lift from "../assets/projects/lift.png";
-import krypto from "../assets/projects/krypto.png";
-import kickstart from "../assets/projects/kickstart.png";
+import pg from "../assets/pg.png";
+import agrichain from "../assets/Agreechain.png";
+import Metaspace from "../assets/Metaspace.png";
+import businessbay from "../assets/Heroimage.png"
 
 const Projects = () => {
   return (
@@ -22,31 +21,31 @@ const Projects = () => {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={lift}
+              imgPath={businessbay}
               isBlog={false}
-              title="Lift-Buddy"
-              description="This online ride-sharing platform boasts a responsive front-end design, complete with an admin panel built using React and Material-UI. With the integration of Google Maps API, users can easily access directions on the map. The platform allows for full CURD functionality on profiles and posts, and users can confirm or cancel a ride from a post and message each other after confirmation. Additionally, users can easily reset their password. The back-end is powered by a Node Express server and utilizes MongoDB for the database management."
-              ghLink="https://github.com/19sajib/lift-buddy"
+              title="Business Bay"
+              description="Business Bay is an all-in-one digital ecosystem that helps sellers, creators, real-estate professionals, restaurateurs and other small-business owners go fully digital. Business Bay.Digital NFC cards and apps: share your business profile with a tap instead of paper. Business Bay.Built-in storefront and selling tools: create an online store and manage orders, no coding required."
+              demoLink="https://businessbay.io/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={project}
+              imgPath={agrichain}
               isBlog={false}
-              title="Social Media"
-              description="This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD activities. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database."
-              ghLink="https://github.com/19sajib/social-media"
+              title="AgriChain"
+              description="AgriChain is an all-in-one agricultural supply chain management platform that enables growers, traders, and logistics providers to manage inventory, contracts, orders, freight, and invoicing—with integrated real-time truck tracking and container packing features and Transaction by blockchain for transparency and security."
+              demoLink="https://agrichain.bastionex.net/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={kickstart}
+              imgPath={Metaspace}
               isBlog={false}
-              title="E‑Commerce Website"
-              description="This ecommerce website utilizes a REST API built with Nodejs and Expressjs, allowing for easy CRUD operations on user profiles, products and admin panel. The user interface is designed for efficient product management and includes a complete purchase process. The admin panel, accessible for CRUD on users and products, includes a chart for statistics display. Stripe API is integrated to handle customer payments. The website uses MongoDB and Firebase as the database."
-              ghLink="https://github.com/19sajib/mern-stack-ecommerce"
+              title="Metaspacechain Marketplace"
+              description="MetaSpace is a space-themed Play-to-Earn (P2E) blockchain game built on the Polygon blockchain that offers an immersive online gaming experience. It features a decentralized NFT marketplace where players fully own, buy, sell, and trade in-game assets such as weapons, characters, and collectibles. The platform combines story mode missions with fast-paced arena battles, allowing players to explore virtual galaxies, engage in combat, and earn real rewards through their gameplay. Beyond gaming, MetaSpace also provides a social hub for players to connect, collaborate, and participate in community events."
+              demoLink="https://marketplace.metaspacechain.com/"
             />
           </Col>
 
@@ -54,30 +53,9 @@ const Projects = () => {
             <ProjectCard
               imgPath={pg}
               isBlog={false}
-              title="Blog Website"
-              description="This blogging application features a RESTful API server built with Nodejs and Expressjs. The data is retrieved from the API server and displayed on a user-friendly interface designed using React, Redux, and styled-components for a seamless experience."
+              title="Decentralized Document Storage Platform"
+              description="This project is a decentralized document storage platform where users can securely store their documents on an IPFS server, with unique content identifiers (CIDs) recorded immutably on the blockchain via smart contracts. Built with a Node.js backend integrated with the Hardhat blockchain development framework, it ensures data integrity and transparency through decentralized storage and blockchain verification. The platform incorporates role-based access control with three user levels—super admin, admin, and user—providing secure and fine-grained permissions. Web3 authentication is integrated for seamless and secure user authorization, empowering users with decentralized identity management while ensuring robust security across the system."
               ghLink="https://github.com/19sajib/mern-blog-app"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={krypto}
-              isBlog={false}
-              title="Project Krypto"
-              description="Project Krypto is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It allows users to interact with their Metamask wallet and send Ethereum."
-              ghLink="https://github.com/19sajib/Project-Krypto-Web-3.0"
-              demoLink="https://project-krypto.netlify.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={kickstart}
-              isBlog={false}
-              title="Solidity Kickstart"
-              description="Solidity Kickstart is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It includes all the functionality of a kickstart platform, enabling users to interact with their Metamask wallet, transfer Ethereum and participate in kickstart campaigns."
-              ghLink="https://github.com/19sajib/Solidity-Kickstart"
             />
           </Col>
         </Row>

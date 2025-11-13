@@ -13,20 +13,22 @@ const Toolstack = () => {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
+        <p style={{ fontSize: "0.8rem" }}>VS Code</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
+        <p style={{ fontSize: "0.8rem" }}>Postman</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVercel />
+        <p style={{ fontSize: "0.8rem" }}>Vercel</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNetlify />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <p style={{ fontSize: "0.8rem" }}>Netlify</p>
       </Col>
     </Row>
+
   );
 }
 
