@@ -3,11 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
 import {
-  AiFillGithub,
-  AiOutlineTwitter
+  AiFillGithub
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
 
 
 
@@ -86,17 +84,6 @@ const About = () => {
                       <AiFillGithub />
                     </a>
                   </li>
-                  {/* <li className="social-icons">
-                    <a
-                      href="https://twitter.com/19sajib"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour  home-social-icons"
-                      aria-label="twitter"
-                    >
-                      <AiOutlineTwitter />
-                    </a>
-                  </li> */}
                   <li className="social-icons">
                     <a
                       href="https://www.linkedin.com/in/arun-kumar-4a26332a9"
@@ -108,17 +95,6 @@ const About = () => {
                       <FaLinkedinIn />
                     </a>
                   </li>
-                  {/* <li className="social-icons">
-                    <a
-                      href="https://leetcode.com/19sajib/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour home-social-icons"
-                      aria-label="instagram"
-                    >
-                      <SiLeetcode />
-                    </a>
-                  </li> */}
                 </ul>
               </Col>
             </Row>
